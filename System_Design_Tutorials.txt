@@ -1,0 +1,75 @@
+
+features of Microservices:
+================================================
+1. Decoupling: The modules can be easily build, scaled and deployed.
+2. Autonomy: Teams can work independently
+3. Continuous Delivery
+
+Components involved in Microservice Architecture:
+================================================
+1. API gateway
+2. Load Balancer
+3. Database
+4. Service discovery
+
+Open-source tools for developing Microservices:
+==============================================
+Operating System: CentOS
+Container: Docker
+Scheduler: Kubernates
+Monitoring: Prometheus
+Messaging: rabbitMQ
+API: POSTMAN
+Programming Language: Elixir
+
+Data Sharding - to break large DB into smaller DBs to maintain consistency.
+	- multiple ways to do the data sharding e.g index based partitioning.
+		- Consistent Hashing 
+		
+Hashing - technique to index the data for storing and retrieving data easily.
+	- For it, Hash function is used.
+	Hash Function - uses mathematical formula to create a value and that value will be stored in Hash Table.
+
+Optimal Hash Function needs to have:
+	- A Hash function can easily be computed.
+	- All the values should be evenly distributed.
+	- There should be less or minimal collision.
+
+How to avoid the collision :
+	- In case of multiple values at the same index, add the new values to a linked list. But searching and deleting will take time. This is also called as Open Hashing.
+	- In this case of multiple values at the same index, check if the next index is free, then insert the new value in the next index. If the next index is not free, then go to next index and insert the value. This is called as Closed Hashing
+	- Quadratic Probing
+	- Double Hashing 
+	
+List of Hash Functions: 
+	- MD5
+	- Jenkins Hash Function
+	- NIST Hash Function Competition
+	
+Consistent Hashing - 
+	- way to store the key value pair in such way that during service addition or deletion,the data changes will be minimum.
+
+	- Number of server I Read + Number of server I write should be greater than the number of servers”. 
+		This will guarantee the data read is the latest data
+
+Open Source Tool for consistent hashing - Cassandra
+
+Load Balancer: 
+	- A Server that takes incoming traffice and distributes across multiple traffic. 
+	- to provide equal load.
+	- based on algorithms, it routes the traffic to different servers.
+	eg. Round Robin
+	
+How Load Balancer works: 
+	- We assign the virtual IP to the load balancer, and the actual servers are connected to the load balancer. We expose the virtual load balancer IP to the customers.
+	
+Features of Load Balancer:
+	1. It can know how many servers are online.
+	2. It can guard against DDoS attacks, as it will sacrifice itself without harming the critical servers.
+	3. Minimizing Downtime. If any one of the critical server is down, then immediately we can shift the traffic to other servers without effecting the traffic.
+	4. It will become easy to scalability.
+	5. Customisation will be easy.
+
+Message Queue: 
+	- Service to service asynchronous communication between multiple services.
+	e.g Apache ActiveMQ, RabbitMQ, Apache RocketMQ

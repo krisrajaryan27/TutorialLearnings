@@ -1,0 +1,216 @@
+Three principles for clean code
+-------------------------
+1. Right tool for the code - 
+	- Boundaries matter.
+
+Staying Natives - Advantages
+=============================
+		- Code is Cached
+		- Code colored
+		- Syntax is checked
+		- Separating of concerns
+		- Reusable
+		- Avoids string parsing
+		- Can minify and obfuscate
+		
+* Avoid using one language to write another language/format via strings.
+* Leverage libraries
+* One language per file
+		
+2. High signal to noise ratio
+	 - Signal - logic that follows the TED Rule
+			- Terse
+			- Expressive
+			- Do one thing
+
+3. self documentation.
+
+Maximise signal to noise ratio.
+ - Signal follows TED Rule
+	* T - Terse
+	* E - Expressive
+	* D - Do one thing
+
+DRY- Dont repeat yourself
+Copy-paste : Design problem
+	* Decreases SNR
+	* Increases no of lines of code
+	* Increases maintainenca
+	
+Self documenting code has:
+	* Clear intent
+	* Layers of abstractions
+	* Format for readability
+	* Favor code over comments
+	
+Naming matters.
+
+Naming Classes can be:
+	* Noun
+	* Be specific
+	* Single Responsibility
+	* Avoid generic suffixes
+	
+Boolean names should sound like true/false questions.
+
+Name should say it all - for methods
+
+Conditionals should say :
+	* Clear intent
+	* Use the right tool
+	* Bite-size logic
+	* sometimes code is not the answer
+	
+Assign booleans implicitly :
+	* Fewer lines
+	* No separate initialisation
+	* No repetition
+	* Reads like speech
+	
+Don't be anti-negative. Use positive conditionals
+
+Ternary is elegant. DRY, YAGNI - You Aint Gonna Need It
+
+Avoid being "Strongly" Typed :
+	* Strongly typed -> No typos
+	* Documents states
+	* Intellisense support
+	* Searchable
+	
+Avoid magic no.
+
+Complex conditionals should be resolved by:
+	* Intermediate variables
+	* Encapsulate via functions
+	
+Favor polymorphism over Enums for behavior
+
+Be declarative if possible
+
+Table Driven Methods :
+	* Great for dynamic logic
+	* avoids hard coding
+
+When to create a function :
+	* To Avoid duplication
+	* Indentation
+	* Unclear Intent
+	* if >1 task
+
+Duplication :
+	* Look for patterns
+	* Excessive Indentation :
+	* Arrow Code
+
+Solution to excessive Indentation :
+	* Extract Method
+	* Extracting a method: like footnotes
+	* Return Early
+	* Fail fast
+
+Convey Intent
+
+Do one thing :
+	* Aids the reader
+	* Promotes reuse
+	* Eases naming and testing
+	* Avoids side effects
+
+Mayfly variables :
+	* Initialise variables just in time
+	* Do one things
+
+How many parameters ?
+	* Strive for 0-2 parameters
+	* Easier to understand
+	* Easier to test
+	* Helps assure function does one things
+	* Watch for flag arguments
+
+Signs that function is too long ?
+	* Whitespace and comments
+	* Scrolling required
+	* Naming issues
+	* Multiple conditionals
+	* Hard to digest i.e more than 1 layer of abstraction
+
+Kinds of exceptions :
+	* Unrecoverable - Null reference, File not found, Access denied
+	* Recoverable - Retry connection, Try different file, Wait and try again
+	* Ignorable - Logging click
+
+Try/Catch/Log = Fail slow
+Try/Catch Body StandAlone
+
+Classes are headings in book.
+
+When to create a class :
+	* If New Concept - Abstract or real world
+	* If Low cohesion - Methods should relate
+	* If Promote Reuse - Small, targeted -> Reuse
+	* If Reduce complexity - Solve once, hide away
+	* Clarify parameters - Identify group of data
+
+Classes Cohesion responsibilty :
+	* Enhances readability
+	* Increases likelihood of reuse
+	* Avoids attracting the lazy
+
+Watch for Primitive Obsession :
+	* Helps reader conceptualise
+	* Implicit -> Explicit
+	* Encapsulation
+	* Aids maintenance
+
+Principle of Proximity :
+	- The Outline rule :
+		* Collapse code should read like an outline
+		* Strive for multiple layers of abstraction
+
+Comments: A Necessity and a crutch
+
+Comments General Rule :
+	* Prefer expressive code over comments
+	* Use comments when code alone isn't sufficient
+
+Comments to avoid :
+	* Redundant Comments - DRY
+	* Intent Comments ,instead clarify intent through code
+	* Improved function Naming
+	* Constant or enum
+	* Intermediate variable
+	* Apology Comments
+	* Warning Comments - Refactor
+	* Kill Zombie Code i.e code commented
+		- Common Causes :
+			* Risk aversion
+			* Hoarding mentality
+		- Optimize Signal to Noise Ratio
+		- Creates Ambiguity
+		- Hinders Refactoring
+	* Divider Comments - Refactor
+	* Brace Tracker Comments - Refactor
+	* Bloated Header - Avoid line endings, DRY, Follow Conventions
+	* Defect Log :
+		- Change metadata belongs in source control
+
+Clean Comments :
+	* To Do Comments
+	* Summary Comments :
+		- describe code at high level context
+	* Documentation
+
+Its very difficult to maintain more than 7 items at once in memory
+Avoid more than 3 level of indentation
+
+Dont fix it if it is not broke.
+
+When to Refactor to clean code :
+	* You need to work with the code
+	* Difficult to comprehend or change
+	* Test coverage to protect from regression.
+	* Accept no broken windows
+
+The Boy Scout Rule :
+	* Always leave the code you're editing a little better than you found it.
+
