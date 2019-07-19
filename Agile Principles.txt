@@ -1,0 +1,204 @@
+* Waterfall doesn't work well for large projects.
+* Agile delivers value in smaller increments
+* Extreme programming is an engineering practice 
+* Scrum is a lightweight framework
+
+Module 1 : Waterfall Model
+-------------------------------------------------------------------
+- first by Winston Royce
+- different stages
+	- Requirement Specification - Business analysts/Stakeholders - clear and fixed, product definition stable
+	- Detailed System Design - Hardware/Architecture - Architect 
+	- Construction - Implementation- Units
+	- Integration 
+	- Testing and Debugging - Faults and failure based on predefined test plans
+	- Installation - Deployment
+	- Maintainance
+- Outcome of one phase acts as input of another phase
+- phases donot overlap
+- good for short duration projects
+# Advantages
+	- Easier scheduling and control
+	- Departmentalizion
+	- Simple and easy to understand
+	- Easy to manage
+	- phases completed one at a time
+	- well understood milestone
+	- process and results well documented
+# Disadvantages
+	- Doesnt allow for reflection and revision
+	- Once in testing stage, change is hard
+	- no working software until late in cycle
+	- high amount of risk and uncertainity
+	- not good for complex projects
+	- not good where change is expected
+	- change in scope can end a project
+	- integration and delivery is done as big bang.
+	
+V- Model
+----------
+- modified version of waterfall
+- non-linear
+- testing phase for each corresponding development phase
+- Verification phase and validation phase joins the actual phase on two sides.
+- Different phases
+	- Requirements Analysis -> Acceptance Test Design -> Acceptance Testing 
+	- System Design -> System Test Design -> System Testing 
+	- Architecture Design  Integration Test Design ->Integration Test 
+	- Module Design -> Unit Test Design ->Unit Test
+	- Coding Phase
+# Advantages:
+	- Requirement well defined and documents fixed
+	- product definition stable
+	- technology well understood
+	- No ambiguous requirement 
+	- easy to understand, apply and manage
+	- disciplined to complete one phase at a time
+#Disadvantages
+	- no flexibility for change in requirement
+	- high risk and uncertainity
+	- not good for complex projects
+	- no working software until late in cycle
+==========================================================================================================================================
+
+Module 2 : Agile Model 
+----------------------------------------------
+- first in 2001 with help of 17 people with agile mantifesto
+- software evolves over time 
+- adaptive planning, evolutionary development, early delivery
+- deliver value to business sooner
+- flexible response to change
+- User Stories >>  Design --> Build --> Test --> Design ---   >> Deploy 
+- Incrementally instead of all at once
+
+# 4 agile values
+===============
+ - Individual and interactions over processes and tools
+ - Working Software over comprehensive documentation
+ - customer collaboration over contract negotiations
+ - responding to change over following a plan
+ 
+# 12 Agile Principles
+============================
+Split into 3 groups
+	- Regular delivery of software
+	- Team communication
+	- Excellence in design
+	
+1. Regular delivery of software
+	- Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+	- Deliver working software frequently from couple of weeks to a couple of months, with a preference to the shorter timescale.(Scrum and XP with 2 week sprints)
+	- Working software is the primary measure of progress.
+	- Agile processes promote sustainable development. The sponsors, developers and users should be able to maintain a constant pace indefinitely.
+	
+2. Team Communication
+	- Business people and developers must work together daily through out the project.(Scrum Daily Meeting)
+	- The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+	- The best architectures, requirements and designs emerge from self-organizing teams.
+	- Build projects around motivated individuals. Give them the environment and support they need and trust them to get the job done.
+	- At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.(Scrum Retrospective)
+	
+3. Excellence in Design
+	- Continuous attention to technical excellence and good design enhances agility.
+	- Simplicity -- the art of maximizing the amount of work not done -- is essential.
+	- Welcome changing requirements, even late in development. Agile processes harnes change for the customer's competitive advantage.
+
+Agile Methodologies
+=============================
+- Scrum - iterative and incremental
+- Extreme Programming(XP)
+- Crystal
+- Dynamic Systems Development method (DSDM)
+- Feature Driven Design
+
+Scrum(Product Owner)-
+ - Leader (Scrum Master)
+ 
+=================================================================================================================================================
+Module 4 :  Agile Advantages and Disadvantages
+------------------------------
+#Advantages
+	- Customer Satisfaction by rapid, continuous delivery of useful software 
+	- People and interactions are emphasized rather than process and tools
+	- Continuous attention to technical excellence and good design
+	- Regular adaptation to changing circumstances
+	- Early return on investment
+	- Feedback from real customers
+	- Build the right products
+
+#Disadvantages
+	- Difficult to assess the effort required at the beginning of the software development life cycle
+	- Can be very demanding on the user's time
+	- Potential for scope creep
+	- Harder for new starters to integrate in the team
+	- Costs can increase as testers are required all the time instead of at the end
+	
+====================================================================================================================================================
+Module 5 : Extreme Programming (XP)
+-----------------------------------------
+- XP is a software development methodology intended to improve software quality and responsiveness to changing customer requirements
+- Created by Kent Beck
+Overview :
+	- 4x activities - Coding, Testing (TDD), listening and designing - listening to customers and users, designing system to reduce coupling
+	- 5x Values - Communication, Simplicity, Feedback, Courage and Respect - build for simplicity, learn from feedback
+	- 3x principles - Feedback, Assuming simplicity and Embracing change
+	- 12x practices -> divided into 4 groups -> Fine Scale Feedback - Pair programming, Planning game, Test Driven Development, Whole Team
+												Continuous Process - Continuous Integration, Refactoring or Design Improvement, Small Releases 
+												Shared understanding - Coding Standards, Collective Code Ownership, Simple Design, System Metaphor
+												Programmer welfare - Sustainable pace, 
+	- 29x Rules -> divided into 5 sections -> 	
+		* Planning - User Stories are written, Release planning, Make frequent small releases, Project divided into iterations, Iteration planning 	 starts each iteration
+		* Managing - Give the team an open work space, Set a sustainable pace, A stand-up meeting starts each day, The project velocity is measured, Move people around, Fix XP when it breaks
+		* Designing - Simplicity, Choose a system metaphor, Use CRC (Class Responsibility Corporation) cards for design sessions, Create spike solutions to reduce risk, No functionality is added early, Refactor whenever possible
+		* Coding - Customer is always available, Code written to agreed standards, Code the unit test first, Production code is pair programmed, Only one pair integrates code at a time, Integrate often, Use a dedicated integration machine, Use collective ownership
+		* Testing - All codes must have unit tests, All code must pass all unit tests, When a bug is found tests are created , Acceptance tests are run often and the score is published
+		
+=====================================================================================================================================================
+Module 6 : Scrum Methodology
+----------------------------------
+- Scrum is a lightweight iterative and incremental agile software development project framework.
+- Created by Ken Schwaber and Jeff Sutherland
+- Series of iterations called sprints.
+- Scrum can be split into 3 main areas 
+	- Roles(Product Owner,Scrum Master and Scrum Team)
+	- Ceremonies(Sprint Planning, Sprint Review, Sprint retrospective, Daily Scrum Meeting)
+	- Artifacts(Product Backlog, Sprint Backlog, Burndown Chart)
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

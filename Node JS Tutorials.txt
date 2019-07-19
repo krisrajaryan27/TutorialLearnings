@@ -1,0 +1,13 @@
+Node JS
+What Node - Wrapper around a VM like V8 with built-in modules providing rich features through easy-to-use asynchronous APIs.
+
+Why Node 	- easy way to execute JS on server
+			- Built-in Modules (fs,http,crypto,zip ...)
+			- Asynchronous APIs (no threads)
+			- C++ addons
+			- Debugger and utilities
+			- has reliable package manager (NPM)
+			- has reliable module dependency manager (CommonJS)
+
+Callback - A function that Node will "call back" at a later point in the time of a program. Done through asynchronous method.
+Promise - 
